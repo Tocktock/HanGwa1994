@@ -151,7 +151,7 @@ void GameScene::Chat(char key)
 	if (key == '\t' || key == '\r')
 		return;
 
-	if (key == '\b' && m_ChatBuf !=0)
+	if (key == '\b' && m_ChatBufCount !=0)
 	{
 		m_ChatBuf[--m_ChatBufCount] = '\0';
 		m_ShowMyChat = m_ChatBuf;
@@ -338,7 +338,7 @@ bool GameScene::RecvPacket(char*szBuf, int &retval, int &Buflen)
 void GameScene::SendPacket()
 {
 	
-	if (m_bResetFlag == true)
+	if (m_bResetFlag == true && m_ChatFlag == false)
 	{
 		m_bResetFlag = false;
 
@@ -493,7 +493,7 @@ void GameScene::CommandProcess(unsigned char Command)
 		{
 			ArrangeChatSTR();
 		}
-		m_ChatSTR[m_iSTRCount] = "흰 돌이 승리했습니다.\n 다시 시작할려면 R버튼을 누르세요";
+		m_ChatSTR[m_iSTRCount] = "흰 돌이 승리했습니다. \n다시 시작할려면 R버튼을 누르세요";
 		m_iSTRCount++;
 
 	
