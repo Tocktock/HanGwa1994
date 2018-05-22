@@ -1,0 +1,20 @@
+﻿  Scene.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\scene.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PACKET_HEADER.h': No such file or directory
+  ResourceManager.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\resourcemanager.cpp(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'Macro.h': No such file or directory
+  LobbyScene.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\scene.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PACKET_HEADER.h': No such file or directory
+  GameScene.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\gamemanager.h(6): fatal error C1083: 포함 파일을 열 수 없습니다. 'PACKET_HEADER.h': No such file or directory
+  GameManager.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\gamemanager.h(6): fatal error C1083: 포함 파일을 열 수 없습니다. 'PACKET_HEADER.h': No such file or directory
+  ClientMain.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\gamemanager.h(6): fatal error C1083: 포함 파일을 열 수 없습니다. 'PACKET_HEADER.h': No such file or directory
+  Bitmap.cpp
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(24): error C2664: 'HANDLE LoadImageW(HINSTANCE,LPCWSTR,UINT,int,int,UINT)': 인수 2을(를) 'const char *'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(24): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(28): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)': 인수 2을(를) 'const char *'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(28): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(75): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ji-young\documents\visual studio 2015\projects\omock_server\omockclient\bitmap.cpp(76): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
