@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4F4FA"
+    >
+<!--가게 정보랑 메뉴 정보 표현-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/storeInfo_storeName"
+                android:layout_margin="10dp"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:text="가게이름 메뉴"
+                android:textSize="14pt"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <!--메뉴정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="9pt"
+                android:id="@+id/storeInfo_storeFeature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEATURE" />
+            <TextView
+                android:id="@+id/storeInfo_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="7pt"
+                android:text="temp" />
+
+            <TextView
+                android:id="@+id/storeInfo_locationString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="7pt"
+                android:text="temp"/>
+
+            <TextView
+                android:id="@+id/storeInfo_openCloseTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="7pt"
+                android:text="temp"
+                />
+
+            <TextView
+                android:id="@+id/storeInfo_personalDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="7pt"
+                android:text="temp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <fragment
+            android:layout_margin="10dp"
+            android:id="@+id/storeInfo_map"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            class ="com.google.android.gms.maps.MapFragment">
+
+        </fragment>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="menu1"
+                    android:textSize="8pt"
+                    android:id="@+id/storeInfo_menu1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/storeInfo_menu2"
+                    android:textSize="8pt"
+                    android:text="menu1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/storeInfo_menu3"
+                    android:textSize="8pt"
+                    android:text="menu1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textSize="8pt"
+                    android:id="@+id/storeInfo_price1"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/storeInfo_price2"
+                    android:textSize="8pt"
+                    android:text="price"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/storeInfo_price3"
+                    android:textSize="8pt"
+                    android:text="price"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <Button
+        android:id="@+id/storeInfo_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가볼 곳으로 등록!!"/>
+
+        <Button
+            android:id="@+id/storeInfo_showReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리뷰보기"/>
+
+        <Button
+            android:id="@+id/storeInfo_backToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌아가기!"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ListView
+            android:id="@+id/storeInfo_ListreView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
