@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFD9"
+    android:layout_centerHorizontal="true"
+    tools:context="com.example.leejiae.review.LoginActivity">
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text=" 바나나?!"
+        android:textColor="#ff0000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="LogIn"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/input_ID"
+        android:layout_centerHorizontal="true"
+        android:hint="ID"
+        android:layout_marginTop="230dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/input_PW"
+        android:layout_centerHorizontal="true"
+        android:hint="PassWord"
+        android:inputType="textPassword"
+        android:layout_below="@+id/input_ID"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input_PW"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Log In"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input_PW"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Sign Up"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_goMAIN"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input_PW"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonstyle"
+        android:text="메인화면으로 가기"
+        android:textAllCaps="false" />
+</RelativeLayout>
