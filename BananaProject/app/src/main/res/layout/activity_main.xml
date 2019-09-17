@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFD9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="212dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <ImageView
+            android:id="@+id/toastMessage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/banana2" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="45dp">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:gravity="center_horizontal"
+                    android:text="여기가면"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_font2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:gravity="center_horizontal"
+                    android:text=" 바나나?!"
+                    android:textColor="#ff0000"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/myzzim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="130dp"
+                android:background="@drawable/buttonstyle"
+                android:text="맛집보기" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#FFFFD9"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/login_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="로그인"
+                android:background="@drawable/buttonstyle"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/logout_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="로그아웃"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/change_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_b"
+                android:layout_marginTop="15dp"
+                android:text="정보변경"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/delete_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/change_b"
+                android:layout_marginTop="15dp"
+                android:text="회원탈퇴"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/review_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete_b"
+                android:layout_marginTop="15dp"
+                android:text="리뷰보기"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/mybasket_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="장바구니"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</android.support.constraint.ConstraintLayout>
